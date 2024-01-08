@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <style>
+      body{
+        margin: 0;
+        padding: 0;
+        background-image: url(Images/Bildhemsida2.jpg);
+        background-size: cover;
+        background-attachment: scroll;
+        background-repeat: no-repeat;
+        height: 100vh;
+        position: relative;
+        overflow: hidden;
+      }
+      .navbar{
+        position: sticky;
+      }
+      .mainheader{
+        padding-top: 15%;
+      }
+      
+      
+    </style>
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg bg-black opacity-75" data-bs-theme="dark">
+        <div class="container-fluid">
+        <img class="me-3 rounded-pill" src="Images/BryggHus4.png" width="100" height="50">
+          <a class="navbar-brand" href="index.html">Brygghuset</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link text-white" href="index.html">Hem</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="booktable.html">Boka Bord</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="menu.html">Meny</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="about.html">Om Oss</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="overlaytext text-center">
+        <h1 class="mainheader text-white fw-bolder border-5 border-black" style="font-size: 60px;">Välkommen till Brygghuset</h1>
+        <h1 class="text-white fw-bolder border-5 border-black" style="font-size: 40px;">Mysig restaurang på västkusten</h1>
+      </div>
+
+      <div class="position-absolute d-flex align-items-center justify-content-center bottom-0 start-0 end-0 m-5" style="height: 10vh;">
+        <button class="btn rounded-pill bg-white text-center bg-black fw-bolder opacity-75 mx-auto" onclick="window.location='booktable.html'">BOKA BORD</button>
+      </div>
+  <script src="cart.js"></script>
+</body>
+</html>

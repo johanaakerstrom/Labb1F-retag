@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    
+    <style>
+      .navbar{
+        position: fixed;
+        width: 100%;
+        margin-bottom: 100;
+      }
+      .mainmenu{
+        padding-top: 90px;
+      }
+      .menuitem{
+        text-align: center;
+      }
+    </style>
+
+<script 
+src="https://x.klarnacdn.net/express-button/v1/lib.js"
+data-id="<mid>"
+data-environment="playground"
+async
+></script>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-black opacity-75" data-bs-theme="dark">
+    <div class="container-fluid">
+    <img class="me-3 rounded-pill" src="Images/BryggHus4.png" width="100" height="50">
+      <a class="navbar-brand" href="index.html">Brygghuset</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarColor01">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link text-white" href="index.html">Hem</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="booktable.html">Boka Bord</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="menu.html">Meny</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="about.html">Om Oss</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<div class="row">
+  <div class="container-fluid">
+    <h3 class="mainmenu text-black fw-bolder text-center" style="font-style: italic;">Våra Menyer</h3> 
+    <br>
+    <h3 class="text-black fw-bolder text-center" style="font-style: italic;">Bland saltdoften, tångdoften havet och vågorna</h3>
+  </div>
+</div> 
+  
+</div>
+
+
+
+<div class="container-fluid">
+  <h3 class="my-3 text-white fw-bolder text-center shadow rounded-pill bg-black opacity-50" style="font-size: xx-large;">Förrätter</h3>
+  
+  <div class="text-center">
+    <img src="Images/snacks.png" alt="A picture of a leaf" height="100">
+  </div>
+  <br>
+<div class="menuitem" id=" MenuItem"> 
+  <h4 class="text-black fw-bolder text-center fst-italic" style="font-size: x-large">Råbiff | 190:-</h4>
+  <p class="text-black fw-bolder text-center">Nötinnanlår från Dalsjöfors med picklade lingon, cornichons, Västerbottenost emulsion, blomkål, silverlök & potatischips</p>
+  <button class="btn rounded-pill bg-black text-white mb-4" onclick="addToCart(0)" data-index="0">Lägg till</button>
+</div> 
+  <br>
+<div class="menuitem" id=" MenuItem">  
+  <h4 class="text-black fw-bolder text-center fst-italic" style="font-size: x-large">Fisk och musselsoppa anno 1999 | 185:-</h4>
+  <p class="text-black fw-bolder text-center">Fisk-och musselsoppa med saffran, torsk, lax, räkor, blåmusslor & strimlade grönsaker</p>
+  <button class="btn rounded-pill bg-black text-white mb-4" onclick="addToCart(1)" data-index="1">Lägg till</button>
+</div>
+  <br>
+<div class="menuitem" id=" MenuItem">  
+  <h4 class="text-black fw-bolder text-center fst-italic" style="font-size: x-large">Pilgrimsmusslor | 190:-</h4>
+  <p class="text-black fw-bolder text-center">Palsternacks puré, stekt bacon, picklad steklök & rostade pinjenötter</p>
+  <button class="btn rounded-pill bg-black text-white mb-4" onclick="addToCart(2)" data-index="2">Lägg till</button>
+</div> 
+  <h3 class="text-white fw-bolder text-center shadow bg-black rounded-pill opacity-50 my-3" style="font-size: xx-large;">Huvudrätter</h3>
+  <br>
+  
+  <div class="text-center">
+    <img src="Images/snacks.png" alt="A picture of a leaf" height="100">
+  </div>
+  <br>
+<div class="menuitem" id=" MenuItem"> 
+  <h4 class="text-black fw-bolder text-center fst-italic" style="font-size: x-large">Ostburgare 150g | 150:-</h4>
+  <p class="text-black fw-bolder text-center">Ostburgare med höggrevskött som serveras med vår hemmagjorda majonäs och västerbotten ost</p>
+  <button class="btn rounded-pill bg-black text-white mb-4" onclick="addToCart(3)" data-index="3">Lägg till</button>
+</div> 
+  <br>
+<div class="menuitem" id=" MenuItem">
+  <h4 class="text-black fw-bolder text-center fst-italic" style="font-size: x-large;">Räksmörgås | 239:-</h4>
+  <p class="text-black fw-bolder text-center">Räksmörgås som serveras på vår hemmabakade rågbröd med handskalade räkor</p>
+  <button class="btn rounded-pill bg-black text-white mb-4" onclick="addToCart(4)" data-index="4">Lägg till</button>
+</div> 
+  <br>
+<div class="menuitem" id=" MenuItem">  
+  <h4 class="text-black fw-bolder text-center fst-italic" style="font-size: x-large;">Ryggbiff | 289:-</h4>
+  <p class="text-black fw-bolder text-center">Serveras med brynt lökpuré, persiljerot, ostronskivling, rödvinsås med tryffel & friterad potatiskaka</p>
+  <button class="btn rounded-pill bg-black text-white mb-4" onclick="addToCart(5)" data-index="5">Lägg till</button>
+</div>
+  <br>
+<div class="menuitem" id=" MenuItem">  
+  <h4 class="text-black fw-bolder text-center fst-italic" style="font-size: x-large;">Stor råbiff | 329:-</h4>
+  <p class="text-black fw-bolder text-center">Nötinnanlår från Dalsjöfors med picklade lingon, cornichons, Västerbottenost emulsion, blomkål, silverlök & potatischips
+  Serveras med pommes frites</p>
+  <button class="btn rounded-pill bg-black text-white mb-4" onclick="addToCart(6)" data-index="6">Lägg till</button>
+</div>  
+  <h3 class="text-white fw-bolder text-center shadow bg-black opacity-50 my-3 rounded-pill" style="font-size: xx-large;">Desserter</h3>
+  <br>
+  
+  <div class="text-center">
+    <img src="Images/snacks.png" alt="A picture of a leaf" height="100">
+  </div>
+  <br>
+<div class="menuitem" id=" MenuItem"> 
+  <h4 class="text-black fw-bolder text-center fst-italic" style="font-size: x-large;">Crème Brûlée | 145:-</h4>
+  <p class="text-black fw-bolder text-center">Crème Brûlée med hallon & björnbärssorbet & mini munk</p>
+  <button class="btn rounded-pill bg-black text-white mb-4" onclick="addToCart(7)" data-index="7">Lägg till</button>
+</div>
+  <br>
+<div class="menuitem" id=" MenuItem">  
+  <h4 class="text-black fw-bolder text-center fst-italic" style="font-size: x-large;">Vitchokladmousse | 155:-</h4>
+  <p class="text-black fw-bolder text-center">Med blodapelsinsorbet, brownie, havre crunch, saltrostade hasselnötter</p>
+  <button class="btn rounded-pill bg-black text-white mb-4" onclick="addToCart(8)" data-index="8">Lägg till</button>
+</div>
+  <br>
+<div class="menuitem" id=" MenuItem">  
+  <h4 class="text-black fw-bolder text-center fst-italic" style="font-size: x-large;">Tryfflar | 55:-</h4>
+  <p class="text-black fw-bolder text-center">Chokladtryffel, citrontryffel & dulcey</p>
+  <button class="btn rounded-pill bg-black text-white mb-4" onclick="addToCart(9)" data-index="9">Lägg till</button>
+</div>
+  <br>
+  
+  <h3 class="text-white fw-bolder text-center shadow bg-black rounded-pill opacity-50" style="font-size: xx-large;">Barnmeny</h3>
+  <br>
+  
+  <div class="text-center">
+    <img src="Images/snacks.png" alt="A picture of a leaf" height="100">
+  </div>
+  <br>
+
+<div class="menuitem" id="MenuItem">
+  <h4 class="text-black fw-bolder text-center fst-italic" style="font-size: x-large;">Pannkakor | 95:-</h4>
+  <p class="text-black fw-bolder text-center">Pannkakor med grädde & sylt</p>
+  <button class="btn rounded-pill bg-black text-white mb-4" onclick="addToCart(10)" data-index="10">Lägg till</button>
+</div>
+  <br>
+<div class="menuitem" id="MenuItem">
+  <h4 class="text-black fw-bolder text-center fst-italic" style="font-size: x-large;">Köttbullar | 95:-</h4>
+  <p class="text-black fw-bolder text-center">Köttbullar med gräddsås, lingon, gurka & kokt potatis</p>
+  <button class="btn rounded-pill bg-black text-white mb-4" onclick="addToCart(11)" data-index="11">Lägg till</button>
+</div> 
+  <br>
+<div class="menuitem" id="MenuItem"> 
+  <h4 class="text-black fw-bolder text-center fst-italic" style="font-size: x-large;">Fisk och musselsoppa | 155:-</h4>
+  <p class="text-black fw-bolder text-center">Brygghusets fisk och musselsoppa med saffran, lax, torsk, räkor, musslor & krispiga grönsaker</p>
+  <button class="btn rounded-pill bg-black text-white mb-4" onclick="addToCart(12)" data-index="12">Lägg till</button>
+</div>
+  <br>
+<div class="menuitem" id="MenuItem"> 
+  <h4 class="text-black fw-bolder text-center fst-italic" style="font-size: x-large;">Vaniljglass | 65:-</h4>
+  <p class="text-black fw-bolder text-center">Med chokladsås & maränger</p>
+  <button class="btn rounded-pill bg-black text-white mb-4" onclick="addToCart(13)" data-index="13">Lägg till</button>
+</div> 
+
+<div id="displayShoppingCart" class="pb-3" style="display: flex; justify-content: center; align-items: center; ">
+  <div class="row px-12 col-12 opacity-75 rounded" style="background-color: black; text-align: center;">
+      <h1 class="text-white" style="margin-top: 100px;">Din Beställning</h1>
+      <div id="shoppingCartItem"></div>
+      <h4 id="totalPrice" class="text-white">Total: 0:-</h4>
+      <div style="margin-top: 75px; padding-bottom: 8%;">
+          <klarna-express-button data-locale="en-US"/>
+      </div>
+  </div>
+</div>
+<script src="cart.js"></script>
+</body>
+</html>
